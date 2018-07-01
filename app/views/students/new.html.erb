@@ -1,0 +1,9 @@
+Student Form
+<%= form_tag students_path do %>
+  <label>Student First Name:</label><br>
+  <input type="text" id="student_first_name" name="first_name"><br>
+  <label>Student Last Name:</label><br>
+  <textarea id="student_last_name" name="last_name"></textarea><br>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="submit" value="Submit Student">
+<% end %>
